@@ -1,0 +1,171 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+#agrupar {
+  width: 70%;
+}
+
+#columna-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 1%;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+#columna {
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  padding: 1%;
+  background-color: whitesmoke;
+  border-radius: 30px;
+  margin-bottom: 15%;
+  border-style: solid;
+}
+
+#container-titulo {
+  display: flex;
+  justify-content: center;
+}
+
+#titulo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#miFormulario {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 5%;
+}
+
+input::placeholder {
+  color: white;
+}
+
+#campo_direccion::placeholder {
+  color: white;
+}
+
+#campo_nombre,
+#boton,
+#campo_direccion {
+  border-width: 3px;
+  border-radius: 5px;
+  width: 98%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  background-color: gray;
+  color: white;
+}
+
+#nombre {
+  display: flex;
+  margin-bottom: -2%;
+  font-size: 12px;
+  margin-left: 5%;
+  color: white;
+}
+
+#apellidos {
+  display: flex;
+  flex-direction: row;
+  margin-top: -1%;
+  color: white;
+}
+
+#email-tel {
+  display: flex;
+  flex-direction: row;
+  margin-top: -1%;
+  margin-bottom: -2.5%;
+  color: white;
+}
+
+#mensajes {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  justify-content: space-between;
+  margin-bottom: 1%;
+}
+
+#mensajes2 {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  margin-bottom: 1%;
+  margin-top: -6%;
+}
+
+#mensajes-ap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: -2%;
+}
+
+#campo_correo {
+  margin-right: 5%;
+  border-width: 3px;
+  border-radius: 5px;
+  width: 50%;
+  background-color: gray;
+  font-size: 20px;
+  color: white;
+}
+
+#campo_telefono {
+  width: 50%;
+  border-width: 3px;
+  border-radius: 5px;
+  background-color: gray;
+  font-size: 20px;
+  color: white;
+}
+
+#campo_apellido_paterno {
+  margin-right: 5%;
+  color: white;
+  background-color: gray;
+}
+
+#campo_apellido_paterno,
+#campo_apellido_materno {
+  width: 50%;
+  border-width: 3px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: gray;
+  color: white;
+}
+
+#container-term {
+  display: flex;
+  flex-direction: row;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: space-between;
+  font-size: 9px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#boton {
+  background-color: blue;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: -5%;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

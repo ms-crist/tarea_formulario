@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="/css/form.css">
+    <script src="./js/objeto.js"></script>
+    <script src="./js/validacion.js"></script>
+</head>
+
+<body background="/imag/fondo.jpg">
+    <div id="agrupar">
+
+        <div id="columna-container">
+            <div id="columna">
+                <div id="container-titulo">
+                    <h1 id="titulo">Registro de usuario</h1>
+                </div>
+                <div id="nombre">
+                    <p id="msgNombre"></p>
+                </div>
+                <form name="miFormulario" id="miFormulario">
+                    <input id="campo_nombre" type="text" name="nombre" placeholder="Ingrese su nombre" required multiple
+                        onchange="ValidaNombre()"><br>
+
+                    <div id="apellidos">
+                        <input id="campo_apellido_paterno" type="text" name="apellido" placeholder="Apellido Paterno"
+                            required multiple onchange="ValidaApellido()">
+
+
+                        <input id="campo_apellido_materno" type="text" name="apellido2" placeholder="Apellido Materno"
+                            required multiple onchange="ValidaApellido2()"><br>
+
+
+                    </div>
+                    <div id="mensajes-ap">
+                        <p id="msgApellido"></p>
+                        <p id="msgApellido1"></p>
+                    </div>
+                    <div id="email-tel">
+                        <input id="campo_correo" type="email" placeholder="Email" required
+                            onchange="Validacorreo()"><br>
+
+                        <input id="campo_telefono" type="tel" placeholder="Teléfono" required
+                            onchange="Validatel()"><br>
+                    </div>
+                    <div id="mensajes">
+                        <p id="msgCorreo"></p>
+                        <p id="msgTel"></p>
+                    </div>
+                    <textarea name="texto" id="campo_direccion" cols="30" rows="3" placeholder="Dirección"
+                        onchange="ValidaTexto()"></textarea><br>
+                    <div id="mensajes2">
+                        <p id="msgText"></p>
+                    </div>
+                    <div id="container-term">
+                        <h1>Terminos y condiciones</h1>
+                        <h1>Politicas de privacidad</h1>
+                    </div>
+                    <button onclick="button(), agregadatos()" type="button" id="boton">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
